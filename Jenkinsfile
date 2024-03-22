@@ -4,6 +4,9 @@ pipeline {
         label 'agent1'
     }
     }
+    environment {
+        GREETING ='HELLO JENIKINS'
+    }
 
     stages {
         stage('Build') {
