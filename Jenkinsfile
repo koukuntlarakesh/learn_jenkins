@@ -4,6 +4,10 @@ pipeline {
         label 'agent1'
     }
     }
+    options {
+        timeout(time: 1, unit: 'MINUTE') 
+        disableConcurrentBuilds()
+    }
     environment {
         GREETING ='HELLO JENIKINS'
     }
